@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import allData from "/src/data.json";
-import logo from "/src/assets/images/logo.svg";
-import light from "/src/assets/images/icon-moon.svg";
-import dark from "/src/assets/images/icon-sun.svg";
+import logo from "../src/assets/images/logo.svg";
+import light from "../src/assets/images/icon-moon.svg";
+import dark from "../src/assets/images/icon-sun.svg";
 
 const App = () => {
   const [data, setData] = useState([]);
