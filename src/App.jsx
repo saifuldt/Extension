@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import allData from "/src/data.json";
+import allData from "../src/data.json";
 import logo from "../src/assets/images/logo.svg";
 import light from "../src/assets/images/icon-moon.svg";
 import dark from "../src/assets/images/icon-sun.svg";
