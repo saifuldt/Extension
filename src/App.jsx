@@ -21,6 +21,11 @@ const App = () => {
     );
   };
 
+  const handleRemove = (index) => {
+    setData((prevData) => prevData.filter((_, i) => i !== index));
+  };
+  
+
   const filteredData = data.filter((item) => {
     if (filter === "active") return item.isActive;
     if (filter === "inactive") return !item.isActive;
@@ -87,7 +92,7 @@ const App = () => {
               </div>
             </div>
             <div className="flex justify-between">
-              <button className="border-2 border-white px-4 py-1 rounded-3xl bg-inherit hover:bg-red-500 hover:text-black">
+              <button  onClick={() => handleRemove(index)}  className="border-2 border-white px-4 py-1 rounded-3xl bg-inherit hover:bg-red-500 hover:text-black">
                 Remove
               </button>
               <button
